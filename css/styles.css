@@ -77,6 +77,24 @@ img {
   height: auto;
 }
 
+.button {
+  color: var(--primary-write-color);
+  background-color: var(--accent-color);
+  font-weight: var(--bold-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 32px;
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color var(--main-transition), box-shadow var(--main-transition);
+}
+
 /* шапка сайта */
 
 .logo {
@@ -140,7 +158,7 @@ img {
   color: var(--accent-color);
 }
 
-.menu__link.current {
+.menu__link--current {
   color: var(--accent-color);
 }
 
@@ -230,29 +248,10 @@ img {
   margin-right: auto;
 }
 
-.hero__button,
-.modal-send {
-  color: var(--primary-write-color);
-  background-color: var(--accent-color);
-  font-weight: var(--bold-font-weight);
-  font-size: var(--secondary-font-size);
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  padding: 10px 32px;
-  border: transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  transition: background-color var(--main-transition), box-shadow var(--main-transition);
-}
-
 .hero__button:hover,
 .hero__button:focus,
-.modal-send:hover,
-.modal-send:hover {
+.button__modal-send:hover,
+.button__modal-send:hover {
   background-color: var(--secondary-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -497,7 +496,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer__logo {
+.logo--write {
   color: var(--primary-write-color);
 }
 
@@ -512,7 +511,6 @@ img {
 .footer__link {
   font-style: normal;
   list-style: none;
-  text-decoration: none;
   color: var(--complementary-color);
   line-height: 1.7;
 
@@ -625,21 +623,8 @@ img {
 
 .subscription__button {
   display: inline-flex;
-  font-weight: var(--bold-font-weight);
-  font-size: var(--secondary-font-size);
-  line-height: 1.87;
-  color: var(--primary-write-color);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  align-items: center;
-  cursor: pointer;
-  border: transparent;
-  
   padding: 10px 28px 10px 28px;
   margin-left: 12px; 
-
-  transition: background-color var(--main-transition);
 }
 
 .subscription__button:hover,
@@ -647,7 +632,7 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.subscription__icon-send { 
+.subscription__icon--end { 
   margin-left: 10px;
 }
 
@@ -671,6 +656,15 @@ img {
   margin-right: 8px;
 }
 
+.button__primary {
+  color: var(--title-text-color);
+  background-color: var(--background-button-color);
+  font-weight: var(--medium-font-weight);
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  padding: 10px 32px;
+}
+
 .button__primary:hover,
 .button__primary:focus {
   color: var(--primary-write-color);
@@ -678,26 +672,9 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);  
 }
 
-.button__primary.all {
+.button__primary--active {
   color: var(--primary-write-color);
   background-color: var(--accent-color);
-}
-
-.button__primary {
-  color: var(--title-text-color);
-  background-color: var(--background-button-color);
-  font-weight: var(--medium-font-weight);
-  font-size: var(--secondary-font-size);
-  line-height: 1.62;
-  text-align: center;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-
-  padding: 10px 32px;
-  border: transparent;
-  border-radius: 4px;
-
-  transition: color var(--main-transition), background-color var(--main-transition), box-shadow var(--main-transition);
 }
 
 .projects {
@@ -764,8 +741,7 @@ img {
 }
 
 .projects__link {
-  display: block;
-  text-decoration: none;  
+  display: block;  
   transition: box-shadow var(--main-transition);
 }
 
@@ -980,7 +956,7 @@ img {
   color: var(--accent-color);
 }
 
-.modal-send {
+.button__modal-send {
   display: block;
   padding: 10px 55px 10px 55px;
   margin-left: auto;
