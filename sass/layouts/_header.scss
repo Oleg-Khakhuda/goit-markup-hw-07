@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+  }
+  .header__navigation,
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }

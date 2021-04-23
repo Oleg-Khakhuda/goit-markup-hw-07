@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
 
 </head>
 
@@ -20,31 +20,31 @@
 
     <header class="header">
         <div class="container header__container">
-            <nav class="navigation">
+            <nav class="header__navigation">
                 <a href="./" class="logo"><span class="logo__first">Web</span>Studio</a>   
                 <ul class="menu list">
-                    <li class="menu__item"><a class="link menu__link" href="./index.html">Студия</a></li>
-                    <li class="menu__item"><a class="link menu__link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__item"><a class="link menu__link current" href="./index.html">Студия</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu__item"><a class="link menu__link" href="">Контакты</a></li>
                 </ul>
             </nav>
     
-            <ul class="nav-list">
-                <li class="nav-list__item">
-                    <a href="mailto:info@devstudio.com" class="link nav-list__link">
-                        <svg class="nav-list__icon" width="16" height="12">
+            <ul class="list contacts-us__list">
+                <li class="contacts-us__item">
+                    <a href="mailto:info@devstudio.com" class="link contacts-us__link">
+                        <svg class="contacts-us__icon" width="16" height="12">
                             <use href="./images/icons/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="nav-list__item">
-                    <a href="tel:+380961111111" class="link nav-list__link">
-                        <svg class="nav-list__icon" width="10" height="16">
+                <li class="contacts-us__item">
+                    <a href="tel:+380961111111" class="link contacts-us__link">
+                        <svg class="contacts-us__icon" width="10" height="16">
                             <use href="./images/icons/icons.svg#smartphone"></use>
                         </svg>  
                     +38 096 111 11 11</a>
                 </li>  
-            </ul>    
+            </ul> 
          </div>
     </header>
 
@@ -55,7 +55,7 @@
     <section class="card-set section">
         <div class="container">
             <h1 class="visually-hidden">Наши проекты</h1>
-            <ul class="card-set__projects">
+            <ul class="list card-set__projects">
                 <li class="card-set__item"><button type="button" class="button button__primary--active">Все</button></li>
                 <li class="card-set__item"><button type="button" class="button button__primary">Веб-сайты</button></li>
                 <li class="card-set__item"><button type="button" class="button button__primary">Приложения</button></li>
@@ -63,7 +63,7 @@
                 <li class="card-set__item"><button type="button" class="button button__primary">Маркетинг</button></li>
             </ul>
             
-            <ul class="projects">
+            <ul class="list projects">
                 <li class="projects__item">
                     <a class="link projects__link" href="">
                         <div class="projects__overlay">
@@ -188,7 +188,7 @@
                 </div>
                 <address>
                     <p  class="footer__title">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="footer__list">
+                    <ul class="list footer__list">
                         <li class="footer__mail"><a href="mailto:info@devstudio.com" class="link footer__link">info@devstudio.com</a></li>
                         <li class="tel"><a href="tel:+380961111111" class="link footer__link">+38 096 111 11 11</a></li>
                     </ul>
@@ -197,7 +197,7 @@
             
             <div class="connection">
                 <p class="connection__text">присоединяйтесь</p>
-            <ul class="connection__list">
+            <ul class="list connection__list">
                 <li class="connection__item">
                     <a class="link connection__link" href="" target="_blank" rel="noopener noreferrer">
                         <svg class="icon" width="20" height="20">
