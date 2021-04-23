@@ -40,16 +40,16 @@
     fill: #AFB1B8;
     
     transition: background-color var(--main-transition), fill var(--main-transition);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color); 
+      fill: var(--primary-write-color);
+    }
   }
   
   .team__social-item:not(:last-child) {
     margin-right: 10px;
-  }
-  
-  .team__social-link:hover,
-  .team__social-link:focus {
-    background-color: var(--accent-color); 
-    fill: var(--primary-write-color);
   }
   
   .team__heading {

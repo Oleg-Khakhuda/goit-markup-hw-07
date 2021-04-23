@@ -54,13 +54,14 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
   
     transition: fill var(--main-transition);
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      fill: var(--accent-color)
+  }
   }
   
-  .modal__close:hover,
-  .modal__close:focus {
-    cursor: pointer;
-    fill: var(--accent-color)
-  }
   
   .modal__heading {
     font-weight: var(--bold-font-weight);

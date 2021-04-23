@@ -18,6 +18,11 @@
     padding-bottom: 32px;
   
     transition: color var(--main-transition);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
   }
   
   .contacts-us__icon {
@@ -26,7 +31,4 @@
     display: inline-block;
   }
   
-  .contacts-us__link:hover,
-  .contacts-us__link:focus {
-    color: var(--accent-color);
-  }
+  

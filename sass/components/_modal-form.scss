@@ -15,7 +15,7 @@
 }
 
 .modal-form__line {
-  position: relative;  
+  position: relative;
 }
 
 .modal-form__input {  
@@ -28,15 +28,15 @@
 
   outline: 0;
   transition: border var(--main-transition);
-}
 
-.modal-form__input:focus + .modal-form__icon {
-  fill: var(--accent-color);
-}
- 
-.modal-form__input:focus {
-  border: 1px solid var(--accent-color);
-  outline-color: var(--accent-color);
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
+  }
+
+  &:focus + .modal-form__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form__icon {
@@ -63,19 +63,21 @@
 
   outline: 0;
   transition: outline-color var(--main-transition), border var(--main-transition);
-}
 
-.modal-form__comment-input::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
 
-.modal-form__comment-input:focus {
-  border: 1px solid var(--accent-color);
-  outline-color: var(--accent-color);
-}
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline-color: var(--accent-color);
+    }
+  }
 
 .modal-form__agreement {
   margin-bottom: 30px;
@@ -94,6 +96,13 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+
+  &:checked + .modal-form__icon-check {
+    background-color: var(--accent-color);
+    background-image: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 .modal-form__icon-check {
@@ -105,12 +114,6 @@
   margin-right: 7px;
 
   transition: background-color var(--main-transition);
-}
-
-.modal-form__check:checked + .modal-form__icon-check {
-  background-color: var(--accent-color);
-  background-image: var(--accent-color);
-  border-radius: 2px;
 }
 
 .modal-form__checkbox-text {
@@ -127,9 +130,10 @@
   padding: 10px 55px 10px 55px;
   margin-left: auto;
   margin-right: auto;
+
+  &:hover,
+  &:hover {
+    @extend %HoverFocus;
+}
 }
 
-.button__modal-send:hover,
-.button__modal-send:hover {
-  @extend %HoverFocus;
-}

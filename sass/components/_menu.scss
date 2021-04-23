@@ -22,14 +22,13 @@
     letter-spacing: 0.02em;
   
     transition: color var(--main-transition);
-  }
   
-  .menu__link:hover,
-  .menu__link:focus,
-  .nav-list__link:hover,
-  .nav-list__link:focus {
-    color: var(--accent-color);
-  }
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+}
   
   .menu__link.current {
     color: var(--accent-color);
