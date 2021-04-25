@@ -14,6 +14,10 @@
     display: inline-block;
     margin-bottom: 20px;
   }
+
+  .footer__address .logo {
+    padding: 0;
+  }
   
   .logo--write {
     color: var(--primary-write-color);
