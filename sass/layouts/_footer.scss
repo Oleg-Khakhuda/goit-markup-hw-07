@@ -7,6 +7,7 @@
   .footer__item {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
   
   .footer__address {
@@ -45,12 +46,6 @@
     margin-bottom: 9px;
   }
   
-  .connection {
-    display: inline-block;
-    padding-top: 12px;
-    padding-bottom: 40px;  
-  }
-  
   .connection__text {
     font-weight: var(--bold-font-weight);
     line-height: 1.14;
@@ -86,6 +81,4 @@
     margin-right: 10px;
   }
   
-  .footer__contacts {
-    display: inline-block;
-  }
+  

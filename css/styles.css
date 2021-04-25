@@ -18,7 +18,7 @@
 }
 
 .hero__button:hover,
-.hero__button:focus, .button__modal-send:hover {
+.hero__button:focus, .button__modal-send:hover, .button__modal-send:focus {
   background-color: var(--secondary-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -493,6 +493,7 @@ img {
 .footer__item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .footer__address {
@@ -527,12 +528,6 @@ img {
   margin-bottom: 9px;
 }
 
-.connection {
-  display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 40px;
-}
-
 .connection__text {
   font-weight: var(--bold-font-weight);
   line-height: 1.14;
@@ -563,15 +558,6 @@ img {
 
 .connection__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer__contacts {
-  display: inline-block;
-}
-
-.footer-form {
-  padding-top: 12px;
-  padding-bottom: 40px;
 }
 
 .footer-form__text {
